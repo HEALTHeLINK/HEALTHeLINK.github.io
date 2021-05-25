@@ -40,7 +40,7 @@ $heading-font-color: $white;
 
 h1, h2, h3, h4, h5{
   color: $primary-color !important;
-  font-family: $heading-font;
+  font-family: $body-font;
   font-weight: 400;
   font-style: normal;
 }
@@ -54,4 +54,11 @@ p img {
 
 .page-header {
   background: linear-gradient(0.25turn, #88BEC3, #60A9AF, #38939B, #2D767C, #22585D)
+}
+
+.page-header h1, h2, h3, h4, h5{
+  color: $heading-font-color !important;
+  font-family: $heading-font;
+  font-weight: 400;
+  font-style: normal;
 }
