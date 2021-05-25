@@ -5,13 +5,18 @@
 @import url("https://use.typekit.net/gsp5xxl.css");
 
 $primary-color: #38939B;
+$secondary-color: #F8AD17;
+$hel-grey: #999999;
+$hel-lt-green: #9BC9CD;
 $white: #ffffff;
+
+
 $body-font: open-sans, Helvetica, Arial, sans-serif;
 $body-font-size: 12px;
 $body-font-color: #000;
 
 $heading-font: open-sans, Helvetica, Arial, sans-serif;
-$heading-font-color: $primary-color;
+$heading-font-color: $white;
 
 .inner {
   max-width: 1024px;
