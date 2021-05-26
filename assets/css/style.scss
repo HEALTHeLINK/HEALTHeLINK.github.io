@@ -10,7 +10,6 @@ $hel-grey: #999999;
 $hel-lt-green: #9BC9CD;
 $white: #ffffff;
 
-
 $body-font: open-sans, Helvetica, Arial, sans-serif;
 $body-font-size: 12px;
 $body-font-color: #000;
@@ -30,15 +29,26 @@ $heading-font-color: $white;
   }
 }
 
+.page-header {
+  background: linear-gradient(0.25turn, #88BEC3, #60A9AF, #38939B, #2D767C, #22585D)
+}
+
+.page-header h1, h2, h3, h4, h5{
+  color: $heading-font-color !important;
+  font-family: $heading-font;
+  font-weight: 400;
+  font-style: normal;
+}
+
 #forkme_banner {
   display: none;
 }
 
-#project_title, #project_tagline {
-  text-shadow: none;
-}
+// #project_title, #project_tagline {
+//   text-shadow: none;
+// }
 
-.main-content > h1, h2, h3, h4, h5{
+.main-content h1, h2, h3, h4, h5{
   color: $primary-color !important;
   font-family: $body-font;
   font-weight: 400;
@@ -50,17 +60,6 @@ p img {
   height: auto;
   display: block;
   max-width: none;
-}
-
-.page-header {
-  background: linear-gradient(0.25turn, #88BEC3, #60A9AF, #38939B, #2D767C, #22585D)
-}
-
-.page-header > h1, h2, h3, h4, h5{
-  color: $heading-font-color !important;
-  font-family: $heading-font;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .embed {
