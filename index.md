@@ -1,12 +1,11 @@
 ## Home
-##### The HEALTHeLINK Developer Portal provides external app developers with access to documentation, registration, and other services related to integrating with HEALTHeLINK's application programming interfaces (APIs). If you are a DEVELOPER and would like to connect your application to an externally accessible API that HEALTHeLINK provides, please select from the item below to learn more about it.
+### Overview 
+The goal of the HEALTHeLINK Developer Portal is to provide developers working on or with HEALTHeLINK systems with an easy to access area for documentation, registration, and other services related to integrating with HEALTHeLINK's application programming interfaces (APIs). If you are a DEVELOPER and would like to connect your application to an externally accessible API that HEALTHeLINK provides, please select the item below to learn more about it.
 
-[Intelligent Query Gateway](https://healthelink.github.io/iqg)
+### Available APIs
+*None Currently* - please check back later for updates.
 
-[Interoperability - Patient Access](https://healthelink.github.io/interop_patient_access)  
-
-[Interoperability - Info Blocking](https://healthelink.github.io/interop_info_blocking)  
-
-If you have any questions regarding this site or any of the above, please use the following page to submit  a question:
+### Need help?
+If you don't see something here or have any questions regarding this site or any of HEALTHeLINK's available APIs, please use the following page to submit a support request. Our team will review and get back to you as soon as possible.
 
 [Support Request](https://healthelink.github.io/support)
