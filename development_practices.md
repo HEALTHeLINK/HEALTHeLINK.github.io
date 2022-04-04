@@ -31,7 +31,7 @@ A few of the most important aspects of this workflow are:
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | local/feature branch| Incomplete changes need to be committed in-progress: store locally and/or commit to a feature branch.                                                                  | No               |
 | local/dev/int       | Completed features need integration with ongoing development or current codebase: merge to an 'integration' branch.                                         | No               |
-| uat | Completed features have passed integration testing and require promotion user-acceptance testing environment: nerge to ‘uat’ branch.    | Yes              |
+| uat | Completed features have passed integration testing and require promotion user-acceptance testing environment: merge to ‘uat’ branch.    | Yes              |
 | prd | User acceptance testing approved and agreement to promote to production environment: merge to ‘prd’ branch. | Yes              |
 
 Alternatively, for projects that may not fit well with the above workflow, another good resource on branching strategies can be found [here](https://nvie.com/posts/a-successful-git-branching-model/).
