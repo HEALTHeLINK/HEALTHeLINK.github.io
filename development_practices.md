@@ -18,7 +18,7 @@ There are no shortage of SCMs readily available that accomplish these tasks and 
 It is also important that repositories are kept separated in a logical fashion that gives the ability to meet all the above criteria as well as monitor and measure changes in each of the systems or sub-systems.
 
 ## Branching Strategy
-It is important to unify around a strategy for using Source Control. Our recommendation is to use a workflow popularized by GitHub, which is called [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow). 
+It is important to unify around a strategy for using Source Control. Our strategy is to use a workflow popularized by GitHub, which is called [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow). 
 
 A few of the most important aspects of this workflow are:
 
@@ -31,7 +31,7 @@ A few of the most important aspects of this workflow are:
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | local/feature branch| Incomplete changes need to be committed in-progress: store locally and/or commit to a feature branch.                                                                  | No               |
 | local/dev/int       | Completed features need integration with ongoing development or current codebase: merge to an 'integration' branch.                                         | No               |
-| uat | Completed features have passed integration testing and require promotion user-acceptance testing environment: merge to ‘uat’ branch.    | Yes              |
+| uat | Completed features have passed integration testing and require promotion user-acceptance testing environment: nerge to ‘uat’ branch.    | Yes              |
 | prd | User acceptance testing approved and agreement to promote to production environment: merge to ‘prd’ branch. | Yes              |
 
 Alternatively, for projects that may not fit well with the above workflow, another good resource on branching strategies can be found [here](https://nvie.com/posts/a-successful-git-branching-model/).
@@ -46,7 +46,7 @@ Our guidelines for versioning are as follows:
  - Never re-use the same identifier for two distinct versions
  - Choose an identifier which has a logical sequence pattern so non-technical user can understand what order versions belong in
 
-We recommend using the [semantic versioning scheme](https://semver.org/) wherever possible. Key features being:
+HEALTHeLINK is using the [semantic versioning scheme](https://semver.org/) wherever possible. Key features being:
  - Given a version number following the {MAJOR}.{MINOR}.{PATCH} scheme, here are the situations for incrementing each:
    -   {MAJOR} - incompatible API changes are made
    -   {MINOR} - functionality is added with backwards compatibility in mind
@@ -56,18 +56,19 @@ We recommend using the [semantic versioning scheme](https://semver.org/) whereve
 As we continue to define/refine portions of SDLC it is becoming important to document a development process that teams can strive to have software projects meet. In the future it may become important that we can demonstrate our SDLC is being considered as well. As such, we are outlining a guideline for a common set of actions to be done throughout the dev process. 
 
  1. On/at merge to any defined 'integration' environment, complete following
-      a. Code linting
-      b. Static code scanning
-      c. Pull/merge request approved for environment
-      d. Build is created with environment-specifics defined as part of the process
-      e. Delivery of build to environment, using environment-specific variables
-      f. Execution of pre-defined and repeatable set of unit tests, suitable for the environment
+ 
+    1.  Code linting
+    2. Static code scanning
+    3. Pull/merge request approved for environment
+    4. Build is created with environment-specifics defined as part of the process
+    5. Delivery of build to environment, using environment-specific variables
+    6. Execution of pre-defined and repeatable set of unit tests, suitable for the environment
      
 2. On/at merge to 'production' environment, complete following
-     a. All steps from previous environments were completed and approval was provided to move to production
-     b. Pull/merge request approved for environment
-     c. Delivery of build to environment, using environment-specific variables
-     d. Execution of pre-defined and repeatable set of acceptance tests, suitable for the environment
+   1. All steps from previous environments were completed and approval was provided to move to production
+   2. Pull/merge request approved for environment
+   3. Delivery of build to environment, using environment-specific variables
+   4. Execution of pre-defined and repeatable set of acceptance tests, suitable for the environment
 
 For all the above actions, it is preferred that each is automated and integrated as seamlessly as possible into the development workflow. The goal is to reap the value of each of these processes while integrating them as efficiently as can be.
 
