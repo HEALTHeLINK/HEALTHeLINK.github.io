@@ -1,9 +1,9 @@
-## Overview
+# Overview
 As part of HEALTHeLINK's continued advancement in areas of technology this page was established to provide a guide of _preferred_ development practices both for internal development teams as well as external development partners that HEALTHeLINK works with for projects. Below are some of the areas in solution development where HEALTHeLINK is attempting to use practices with a goal of creating a consistent approach in developing solutions to allow teams to seamlessly integrate into or work with HEALTHeLINK projects.
 
 *Note the emphasis here is that these are **preferred** practices. Not all systems will meet these guidelines currently and there are always exceptions to the rule. However, meeting these guidelines should be the aim when developing new projects and during any technical debt cleanup phases of existing projects.*
 
-### Source Control
+## Source Control
 Tracking and managing changes to code is critically important for maintaining technology solutions. When working across teams it also provides a single source of truth as well as establishing a pattern for collaboration. As such, it is preferred to use a Source Control management (SCM) system with the following attributes:
 
  - Stores source code in distributed system
@@ -17,7 +17,7 @@ There are no shortage of SCMs readily available that accomplish these tasks and 
 
 It is also important that repositories are kept separated in a logical fashion that gives the ability to meet all the above criteria as well as monitor and measure changes in each of the systems or sub-systems.
 
-### Branching Strategy
+## Branching Strategy
 It is important to unify around a strategy for using Source Control. Our recommendation is to use a workflow popularized by GitHub, which is called [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow). 
 
 A few of the most important aspects of this workflow are:
@@ -36,7 +36,7 @@ A few of the most important aspects of this workflow are:
 
 Alternatively, for projects that may not fit well with the above workflow, another good resource on branching strategies can be found [here](https://nvie.com/posts/a-successful-git-branching-model/).
 
-### Versioning
+## Versioning
 It is important to use versions to uniquely identify software change sets that are delivered or planned for delivery. This also helps teams unify in discussion of projects without having to adopt confusing nomenclature surrounding release of software. 
 
 Our guidelines for versioning are as follows:
@@ -52,7 +52,7 @@ We recommend using the [semantic versioning scheme](https://semver.org/) whereve
    -   {MINOR} - functionality is added with backwards compatibility in mind
    -   {PATCH} - backwards-compatible bug fixes are added
 
-### Development Pipeline
+## Development Pipeline
 As we continue to define/refine portions of SDLC it is becoming important to document a development process that teams can strive to have software projects meet. In the future it may become important that we can demonstrate our SDLC is being considered as well. As such, we are outlining a guideline for a common set of actions to be done throughout the dev process. 
 
  1. On/at merge to any defined 'integration' environment, complete following
@@ -71,7 +71,7 @@ As we continue to define/refine portions of SDLC it is becoming important to doc
 
 For all the above actions, it is preferred that each is automated and integrated as seamlessly as possible into the development workflow. The goal is to reap the value of each of these processes while integrating them as efficiently as can be.
 
-### Code Reviews
+## Code Reviews
 As part of the Pull Request (PR) process, all commits should be reviewed by team members and approved before they can be merged. This is an effort to get “another set of eyes” on code to encourage collaboration such that it may lead to improved software if others lend their experience, domain knowledge, or subject matter expertise to new/changed code. Including other perspectives helps us eliminate blind spots and sheds light on approaches that may not have been considered for accomplishing the task at hand.
 
 To summarize, a good code review has the following elements:
